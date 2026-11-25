@@ -1,0 +1,15 @@
+1. Magisk App (.apk):
+github.com/topjohnwu/Magisk/releases/download/v30.7/Magisk-v30.7.apk
+2. Python 3 for Windows 64-bit (.exe):
+www.python.org/ftp/python/3.12.8/python-3.12.8-amd64.exe
+3. Android SDK Platform-Tools (adb.exe & fastboot.exe .zip):
+dl.google.com/android/repository/platform-tools-latest-windows.zip
+4. Google USB Driver (.zip):
+dl.google.com/android/repository/usb_driver_r13-windows.zip
+5. Motorola USB Drivers Page (MotorolaDeviceManager_2.5.4.exe):
+en-us.support.motorola.com/app/usb-drivers
+6. val-protocol Bootloader Exploit Tool (.zip):
+github.com/Maikyxd/val-protocol/archive/refs/heads/main.zip
+7. LenovoMotoFirmwareDownloader (LMFD .zip):
+github.com/enigma550/LenovoMotoFirmwareDownloader/releases/latest
+Everything is cleanly formatted and ready for your repo—let me know if you need anything else before you get computer access!

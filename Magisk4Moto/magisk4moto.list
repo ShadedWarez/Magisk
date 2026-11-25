@@ -1,0 +1,132 @@
+Here is a clean, self-contained checklist of everything you need to download, where to get it, and the exact step-by-step order of operations to unlock and root your Moto G Play (2026) Cricket (XT2615-2, codename nevada, build W1WN36.18-111-7-2) on Windows 11.
+
+Phase 1: Downloads (Save Everything to One Folder, e.g., C:\MotoRoot\)
+
+1. Stock Firmware (W1WN36.18-111-7-2 — Cricket XT2615-2 / nevada)
+	• Where to get it: Needrom — Moto G Play 2026 XT2615-2 CRICKET or Lolinet Motorola Mirrors (lenomola) (check under nevada -> CRICKET).
+	• What to extract: Open the .zip and pull out only these three files into C:\MotoRoot\:
+		• lk.img
+		• init_boot.img
+		• vbmeta.img
+2. Android SDK Platform-Tools (adb & fastboot)
+	• Where to get it: Android Developer Platform-Tools
+	• What to extract: Unzip platform-tools directly into C:\MotoRoot\platform-tools\.
+3. Motorola USB Drivers (for Windows 11 Fastboot)
+	• Where to get it: Motorola Official USB Drivers
+	• Setup: Run the installer on Windows 11.
+4. Python 3 (for Windows 11)
+	• Where to get it: Python.org Windows Downloads
+	• Setup: During installation, check the box "Add python.exe to PATH".
+5. Bootloader Exploit Tool (val-protocol / Valhalla)
+	• Where to get it: Maikyxd/val-protocol on GitHub (and optionally crabcakes97/Valhalla on GitHub).
+	• Setup: Click Code -> Download ZIP, extract into C:\MotoRoot\val-protocol\, and copy your extracted lk.img into that same folder.
+6. Official Magisk App (.apk)
+	• Where to get it: topjohnwu/Magisk Releases on GitHub
+	• Setup: Download the latest Magisk-vXX.X.apk to C:\MotoRoot\.
+
+Phase 2: Unlock the Bootloader
+
+1. Boot Phone Into Fastboot Mode:
+	• Power the Moto G Play completely off.
+	• Hold Volume Down + Power until the black AP Fastboot Flash Mode screen appears, then plug it into your Windows 11 laptop via USB.
+2. Verify Connection & Get Serial Number:
+	• Open Command Prompt inside C:\MotoRoot\platform-tools\ and run:cmd
+fastboot devices
+Use code with caution.
+	• Note the serial number printed next to fastboot.
+3. Patch lk.img and Generate Unlock Key:
+	• Open Command Prompt inside C:\MotoRoot\val-protocol\ and run the lk_auto_patch.py script against your lk.img (follow the exact syntax printed in the repo's README, supplying your phone's serial number when prompted).
+	• This outputs a patched lk image (e.g., lk_patched.img) and your device's 20-character unlock key.
+4. Flash Patched lk.img & Unlock:
+	• From C:\MotoRoot\platform-tools\, flash the patched lk.img to your active slot (_a or _b—check with fastboot getvar current-slot), reboot back into Fastboot, and run the unlock command:cmd
+fastboot flash lk_a lk_patched.img
+fastboot reboot bootloader
+fastboot oem unlock YOUR_GENERATED_KEY
+Use code with caution.
+	• Use the Volume buttons on the phone to confirm unlocking. The phone will wipe all user data and reboot.
+
+Phase 3: Root With Magisk
+
+1. Initial Offline Setup:
+	• Complete the first-time Android setup screen offline (skip Wi-Fi and Google sign-in so com.motorola.paks cannot pull carrier updates).
+2. Patch init_boot.img on the Phone:
+	• Plug the phone into your PC (set USB mode to File Transfer) and copy Magisk-vXX.X.apk and your untouched stock init_boot.img to the phone's Download folder.
+	• On the phone, open the Files app, install Magisk-vXX.X.apk, open Magisk, tap Install -> Select and Patch a File, and pick init_boot.img.
+	• Copy the newly created magisk_patched-XXXXX.img from the phone's Download folder back into C:\MotoRoot\platform-tools\ on your laptop.
+3. Flash vbmeta and Magisk init_boot:
+	• Copy your untouched stock vbmeta.img into C:\MotoRoot\platform-tools\.
+	• Power off the phone, hold Volume Down + Power to re-enter Fastboot Mode, connect to your laptop, and run:cmd
+fastboot --disable-verity --disable-verification flash vbmeta_a vbmeta.img
+fastboot --disable-verity --disable-verification flash vbmeta_b vbmeta.img
+fastboot flash init_boot_a magisk_patched-XXXXX.img
+fastboot reboot
+Use code with caution.
+4. Final Verification & Debloat:
+	• Once booted, open the Magisk app—it will show Installed: XX.X and prompt for one final reboot to finish environment setup.
+	• With root active, you can permanently freeze or remove com.motorola.paks before connecting to Wi-Fi.
+If you run into any issues while setting up Windows 11 OOBE, installing the MediaTek/Fastboot drivers, or running lk_auto_patch.py, share the exact output or error message and we can troubleshoot it on the spot.
+• Incremental Policy Creep: When a city removes bus benches, criminalizes sleeping outside, builds a fenced shelter campus with controlled entry, and then expands arrest powers to fill a 672-bed jail on the edge of town, each step is sold to the public as a reasonable "quality-of-life" fix—even though, stacked together, they build the exact infrastructure for mass containment of poor and unhoused people.
+• Why It's Never Advertised That Way: Officials frame these moves around "public safety," "deterrence," and "connecting people to services" because calling it what it functions as—rounding up low-income and unhoused residents and putting them behind fences or bars—would trigger immediate public pushback.
+• Why January 25, 2027 Is a Pivotal Line: Once local governments put that arrest-and-detention pipeline into law, it rarely gets rolled back. That is why the upcoming vote on January 25, 2027—before the municipal jail agreement is signed—is the critical moment where that next step can still be stopped or challenged locally.
+Your tracker remains active and will notify you ahead of the January 25, 2027 Pueblo City Council vote.
+Would you like to keep your current tracker as is (watching for updates ahead of the January 25 municipal jail vote), or is there anything else about Pueblo's local ordinances or upcoming vote you'd like to look into?
+
+
+
+Here are the direct, copy-pasteable URLs for all the downloads listed in your checklist:
+1. Stock Firmware (W1WN36.18-111-7-2 — Cricket XT2615-2 / nevada)
+	• Needrom (Cricket XT2615-2): https://needrom.com
+	• Lolinet Motorola Mirrors (lenomola): https://lolinet.com
+2. Android SDK Platform-Tools (adb & fastboot)
+	• https://android.com
+3. Motorola USB Drivers
+	• https://motorola.com
+4. Python 3 for Windows
+	• https://python.org
+5. Bootloader Exploit Tool (val-protocol / Valhalla)
+	• val-protocol: https://github.com
+	• Valhalla (optional GUI): https://github.com
+6. Official Magisk App (.apk)
+	• https://github.com
+
+
+Here is the exact command syntax from the Maikyxd/val-protocol README so you have it saved for when you get to your computer:
+
+1. Install Python Dependencies
+
+Open Command Prompt inside your extracted val-protocol folder (C:\MotoRoot\val-protocol\) and install the required packages (Python 3.11+ 64-bit is recommended):
+
+
+python -m pip install -r requirements.txt
+
+
+
+2. Patch lk.img With lk_auto_patch.py
+
+Run the auto-patcher against your untouched lk.img using the unlock-serial-nvdata preset and any custom secret string you choose:
+
+python lk_auto_patch.py "lk.img" -o "lk_patched.img" --preset unlock-serial-nvdata --key-token-secret "YourSecret" --erase-partition frp
+
+
+• How the unlock key works: You do not hardcode your phone's serial number into the image. The patched lk_patched.img reads your serial number at runtime, and lk_auto_patch.py prints out your device's 20-character unlock key (or you can generate it with lk_keygen.py using the same --key-token-secret and your Fastboot serial number).
+
+3. Flash & Unlock via Fastboot
+
+From your platform-tools folder (with lk_patched.img copied inside), check your active slot (a or b), flash the patched bootloader, reboot back into Fastboot, and unlock:
+
+
+• How the unlock key works: You do not hardcode your phone's serial number into the image. The patched lk_patched.img reads your serial number at runtime, and lk_auto_patch.py prints out your device's 20-character unlock key (or you can generate it with lk_keygen.py using the same --key-token-secret and your Fastboot serial number).
+
+3. Flash & Unlock via Fastboot
+
+From your platform-tools folder (with lk_patched.img copied inside), check your active slot (a or b), flash the patched bootloader, reboot back into Fastboot, and unlock:
+
+fastboot getvar current-slot
+fastboot flash lk_a lk_patched.img
+fastboot reboot bootloader
+fastboot oem unlock YOUR_20_CHAR_KEY
+
+
+
+(Note: If current-slot returns b, flash lk_b instead of lk_a.)
+Would you like me to save the Magisk post-root debloat commands for removing com.motorola.paks permanently once you have root access?
