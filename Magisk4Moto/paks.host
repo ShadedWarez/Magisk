@@ -1,17 +1,17 @@
 cat << 'EOF' >> /data/adb/modules/hosts/system/etc/hosts
 
 # Block Motorola PAKS, Carrier Provisioning & OTA Check-in Servers
-0.0.0.0 ://motorola.com
-0.0.0.0 ://motorola.com
-0.0.0.0 ://motorola.com
-0.0.0.0 ://motorola.com
-0.0.0.0 moto://motorola.com
-0.0.0.0 ://motorola.com
-0.0.0.0 ://motorola.com
-0.0.0.0 c://motorola.com
-0.0.0.0 ://motorola.com
-0.0.0.0 ://motorola.com
-0.0.0.0 ://cricketwireless.com
+0.0.0.0 motorola.com
+0.0.0.0 motorola.com
+0.0.0.0 motorola.com
+0.0.0.0 motorola.com
+0.0.0.0 motomotorola.com
+0.0.0.0 motorola.com
+0.0.0.0 motorola.com
+0.0.0.0 cmotorola.com
+0.0.0.0 motorola.com
+0.0.0.0 motorola.com
+0.0.0.0 cricketwireless.com
 0.0.0.0 deviceprovisioning.att.net
 0.0.0.0 dm.att.net
 EOF
