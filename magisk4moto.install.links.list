@@ -1,0 +1,18 @@
+Here are the direct, copy-pasteable URLs for all the downloads listed in your checklist:
+1. Stock Firmware (W1WN36.18-111-7-2 — Cricket XT2615-2 / nevada)
+	• Needrom (Cricket XT2615-2): https://needrom.com
+	• Lolinet Motorola Mirrors (lenomola): https://lolinet.com
+2. Android SDK Platform-Tools (adb & fastboot)
+	• https://android.com
+3. Motorola USB Drivers
+	• https://motorola.com
+4. Python 3 for Windows
+	• https://python.org
+5. Bootloader Exploit Tool (val-protocol / Valhalla)
+	• val-protocol: https://github.com
+	• Valhalla (optional GUI): https://github.com
+6. Official Magisk App (.apk)
+	• https://github.com
+Would you also like the exact README syntax for lk_auto_patch.py saved here so you don't have to look it up when you get to your computer?
+
+Sure ty
