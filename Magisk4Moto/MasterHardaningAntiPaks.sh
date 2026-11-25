@@ -23,19 +23,19 @@ if [ -f "$HOSTS_FILE" ]; then
 cat << 'EOF' >> "$HOSTS_FILE"
 
 # Motorola PAKS, Carrier Provisioning & OTA Endpoints
-0.0.0.0 paks.motorola,com
-0.0.0.0 paks-prod.motorola,com
-0.0.0.0 paks-staging.motorola,com
-0.0.0.0 device-provisioning.motorola,com
-0.0.0.0 motopaks.motorola,com
-0.0.0.0 ota-service.motorola,com
-0.0.0.0 ota.motorola,com
-0.0.0.0 cota.motorola,com
-0.0.0.0 mdm.motorola,com
-0.0.0.0 rsdsecure-cloud.motorola,com
-0.0.0.0 omadm.cricketwireless,com
-0.0.0.0 deviceprovisioning.att,net
-0.0.0.0 dm.att,net
+0.0.0.0 paks.motorola.com
+0.0.0.0 paks-prod.motorola.com
+0.0.0.0 paks-staging.motorola.com
+0.0.0.0 device-provisioning.motorola.com
+0.0.0.0 motopaks.motorola.com
+0.0.0.0 ota-service.motorola.com
+0.0.0.0 ota.motorola.com
+0.0.0.0 cota.motorola.com
+0.0.0.0 mdm.motorola.com
+0.0.0.0 rsdsecure-cloud.motorola.com
+0.0.0.0 omadm.cricketwireless.com
+0.0.0.0 deviceprovisioning.att.net
+0.0.0.0 dm.att.net
 EOF
 chmod 644 "$HOSTS_FILE"
 echo "Systemless hosts updated."
