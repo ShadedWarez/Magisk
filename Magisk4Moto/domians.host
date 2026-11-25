@@ -1,0 +1,95 @@
+paks.motorola.com
+paks-prod.motorola.com
+paks-staging.motorola.com
+device-provisioning.motorola.com
+motopaks.motorola.com
+ota-service.motorola.com
+ota.motorola.com
+cota.motorola.com
+mdm.motorola.com
+rsdsecure-cloud.motorola.com
+omadm.cricketwireless.com
+deviceprovisioning.att.net
+dm.att.net
+device.cloud.trustonic.com
+cloud.trustonic.com
+trustonic.com
+# ==========================================
+# WILDCARD ROOT DOMAINS (Pass with your wildcard flag)
+# ==========================================
+google-analytics.com
+googletagmanager.com
+googletagservices.com
+googlesyndication.com
+doubleclick.net
+app-measurement.com
+crashlytics.com
+sentry.io
+adfast.io
+adfast.net
+adfast.com
+fastad.io
+appmetrica.yandex.net
+yandexadexchange.net
+adfox.ru
+appsflyer.com
+adjust.com
+adjust.net.in
+adjust.world
+mixpanel.com
+amplitude.com
+braze.com
+onesignal.com
+split.io
+unityads.unity3d.com
+applovin.com
+ironsrc.com
+vungle.com
+mintegral.com
+pangle.io
+bytedance.com
+inmobi.com
+chartboost.com
+tapjoy.com
+flurry.com
+branch.io
+bugsnag.com
+datadoghq.com
+newrelic.com
+segment.io
+segment.com
+
+# ==========================================
+# EXACT / SUBDOMAIN-ONLY ENTRIES (Do NOT wildcard root)
+# Wildcarding googleapis.com, gstatic.com, facebook.com, or yandex.ru
+# will break core app logins, CDNs, maps, and push notifications.
+# ==========================================
+
+# Google & Firebase Telemetry Subdomains
+clientmetrics-pa.googleapis.com
+metrics.gstatic.com
+play-fe.googleapis.com
+connectivitycheck.gstatic.com
+crashlyticsreports-pa.googleapis.com
+firebaselogging.googleapis.com
+firebaselogging-pa.googleapis.com
+firebaseremoteconfig.googleapis.com
+firebaseinstallations.googleapis.com
+fcm.googleapis.com
+
+# Yandex Telemetry Subdomains
+startup.mobile.yandex.net
+mc.yandex.ru
+an.yandex.ru
+bs.yandex.ru
+clck.yandex.ru
+
+# Facebook / Meta Telemetry Subdomains
+an.facebook.com
+analytics.facebook.com
+pixel.facebook.com
+connect.facebook.net
+edge-mqtt.facebook.com
+mqtt-mini.facebook.com
+b-graph.facebook.com
+graph.facebook.com

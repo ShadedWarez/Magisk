@@ -1,0 +1,162 @@
+127.0.0.1 localhost
+::1 ip6-localhost
+
+# --- Motorola, Carrier Provisioning & Trustonic ---
+0.0.0.0 paks.motorola.com
+0.0.0.0 paks-prod.motorola.com
+0.0.0.0 paks-staging.motorola.com
+0.0.0.0 device-provisioning.motorola.com
+0.0.0.0 motopaks.motorola.com
+0.0.0.0 ota-service.motorola.com
+0.0.0.0 ota.motorola.com
+0.0.0.0 cota.motorola.com
+0.0.0.0 mdm.motorola.com
+0.0.0.0 rsdsecure-cloud.motorola.com
+0.0.0.0 omadm.cricketwireless.com
+0.0.0.0 deviceprovisioning.att.net
+0.0.0.0 dm.att.net
+0.0.0.0 device.cloud.trustonic.com
+0.0.0.0 cloud.trustonic.com
+0.0.0.0 trustonic.com
+
+# --- Google Ads, Analytics & Telemetry ---
+0.0.0.0 google-analytics.com
+0.0.0.0 www.google-analytics.com
+0.0.0.0 ssl.google-analytics.com
+0.0.0.0 googletagmanager.com
+0.0.0.0 www.googletagmanager.com
+0.0.0.0 googletagservices.com
+0.0.0.0 pagead2.googlesyndication.com
+0.0.0.0 tpc.googlesyndication.com
+0.0.0.0 googleads.g.doubleclick.net
+0.0.0.0 stats.g.doubleclick.net
+0.0.0.0 ad.doubleclick.net
+0.0.0.0 cm.g.doubleclick.net
+0.0.0.0 pubads.g.doubleclick.net
+0.0.0.0 securepubads.g.doubleclick.net
+0.0.0.0 app-measurement.com
+0.0.0.0 www.app-measurement.com
+0.0.0.0 clientmetrics-pa.googleapis.com
+0.0.0.0 metrics.gstatic.com
+0.0.0.0 play-fe.googleapis.com
+0.0.0.0 connectivitycheck.gstatic.com
+
+# --- Firebase Analytics, Crashlytics & Remote Config ---
+0.0.0.0 firebase-settings.crashlytics.com
+0.0.0.0 settings.crashlytics.com
+0.0.0.0 e.crashlytics.com
+0.0.0.0 reports.crashlytics.com
+0.0.0.0 crashlyticsreports-pa.googleapis.com
+0.0.0.0 firebaselogging.googleapis.com
+0.0.0.0 firebaselogging-pa.googleapis.com
+0.0.0.0 firebaseremoteconfig.googleapis.com
+0.0.0.0 firebaseinstallations.googleapis.com
+0.0.0.0 fcm.googleapis.com
+
+# --- Sentry Crash & Performance Telemetry ---
+0.0.0.0 sentry.io
+0.0.0.0 ingest.sentry.io
+0.0.0.0 ingest.us.sentry.io
+0.0.0.0 ingest.de.sentry.io
+0.0.0.0 o0.ingest.sentry.io
+0.0.0.0 app.getsentry.com
+
+# --- AdFast / FastAd / Ad Mediation SDKs ---
+0.0.0.0 adfast.io
+0.0.0.0 api.adfast.io
+0.0.0.0 sdk.adfast.io
+0.0.0.0 track.adfast.io
+0.0.0.0 ads.adfast.net
+0.0.0.0 adserver.adfast.com
+0.0.0.0 fastad.io
+0.0.0.0 api.fastad.io
+
+# --- Yandex AppMetrica & Ads ---
+0.0.0.0 appmetrica.yandex.net
+0.0.0.0 report.appmetrica.yandex.net
+0.0.0.0 tracking.appmetrica.yandex.net
+0.0.0.0 tracking.reserve.appmetrica.yandex.net
+0.0.0.0 startup.mobile.yandex.net
+0.0.0.0 mc.yandex.ru
+0.0.0.0 an.yandex.ru
+0.0.0.0 bs.yandex.ru
+0.0.0.0 clck.yandex.ru
+0.0.0.0 adfox.ru
+0.0.0.0 yandexadexchange.net
+
+# --- Facebook / Meta SDK & Graph Telemetry ---
+0.0.0.0 graph.facebook.com
+0.0.0.0 an.facebook.com
+0.0.0.0 analytics.facebook.com
+0.0.0.0 pixel.facebook.com
+0.0.0.0 connect.facebook.net
+0.0.0.0 edge-mqtt.facebook.com
+0.0.0.0 mqtt-mini.facebook.com
+0.0.0.0 b-graph.facebook.com
+0.0.0.0 web.facebook.com
+
+# --- Attribution, Analytics & Crash SDKs (AppsFlyer, Adjust, Braze, Mixpanel, Amplitude, etc.) ---
+0.0.0.0 launches.appsflyer.com
+0.0.0.0 attr.appsflyer.com
+0.0.0.0 t.appsflyer.com
+0.0.0.0 conversions.appsflyer.com
+0.0.0.0 inapps.appsflyer.com
+0.0.0.0 app.adjust.com
+0.0.0.0 app.adjust.net.in
+0.0.0.0 app.adjust.world
+0.0.0.0 api.mixpanel.com
+0.0.0.0 decide.mixpanel.com
+0.0.0.0 api.amplitude.com
+0.0.0.0 api2.amplitude.com
+0.0.0.0 sdk.iad-01.braze.com
+0.0.0.0 sdk.iad-03.braze.com
+0.0.0.0 api.onesignal.com
+0.0.0.0 img.onesignal.com
+0.0.0.0 events.split.io
+0.0.0.0 sdk.split.io
+0.0.0.0 branch.io
+0.0.0.0 api.branch.io
+0.0.0.0 api2.branch.io
+0.0.0.0 bugsnag.com
+0.0.0.0 notify.bugsnag.com
+0.0.0.0 sessions.bugsnag.com
+0.0.0.0 datadoghq.com
+0.0.0.0 browser-intake-datadoghq.com
+0.0.0.0 logs.browser-intake-datadoghq.com
+0.0.0.0 newrelic.com
+0.0.0.0 mobile-collector.newrelic.com
+0.0.0.0 mobile-crash.newrelic.com
+0.0.0.0 segment.io
+0.0.0.0 api.segment.io
+0.0.0.0 segment.com
+0.0.0.0 cdn.segment.com
+
+# --- Mobile Ad Networks (Unity, AppLovin, IronSource, Vungle, Mintegral, Pangle, InMobi, etc.) ---
+0.0.0.0 unityads.unity3d.com
+0.0.0.0 config.unityads.unity3d.com
+0.0.0.0 adserver.unityads.unity3d.com
+0.0.0.0 applovin.com
+0.0.0.0 d.applovin.com
+0.0.0.0 rt.applovin.com
+0.0.0.0 ms.applovin.com
+0.0.0.0 ironsrc.com
+0.0.0.0 init.supersonicads.com
+0.0.0.0 outcome-ssp.supersonicads.com
+0.0.0.0 vungle.com
+0.0.0.0 api.vungle.com
+0.0.0.0 ads.api.vungle.com
+0.0.0.0 mintegral.com
+0.0.0.0 net.rayjump.com
+0.0.0.0 pangle.io
+0.0.0.0 api-access.pangolin-sdk-toutiao.com
+0.0.0.0 bytedance.com
+0.0.0.0 inmobi.com
+0.0.0.0 api.w.inmobi.com
+0.0.0.0 config.inmobi.com
+0.0.0.0 chartboost.com
+0.0.0.0 live.chartboost.com
+0.0.0.0 tapjoy.com
+0.0.0.0 rpc.tapjoy.com
+0.0.0.0 ws.tapjoyads.com
+0.0.0.0 flurry.com
+0.0.0.0 data.flurry.com
